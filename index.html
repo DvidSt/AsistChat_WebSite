@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chatbots profesionales tipo WhatsApp para soporte, agendamiento, comercio y soluciones personalizadas." />
+  <meta name="keywords" content="chatbot, whatsapp, soporte, agendamiento, comercio, inteligencia artificial, atención al cliente" />
+  <meta name="author" content="AsistChat" />
+  <title>AsistChat | Soluciones de Chatbots Tipo WhatsApp</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- 🔝 Header -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <div class="logo">
+        <img src="img/AsistBot_Logo.svg" alt="AsistChat Logo" height="40" />
+        <span class="logo-text">AsistChat</span>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#otras-soluciones">Personalizado</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🎯 Hero -->
+  <section id="inicio" class="hero-section">
+    <div class="container hero-content">
+      <h1>Automatiza. Conecta. Conversa.</h1>
+      <p>Chatbots profesionales diseñados para impulsar tu negocio en WhatsApp.</p>
+      <a href="#contacto" class="btn-primary">Contáctanos</a>
+
+      <div class="hero-video-wrapper">
+        <div class="responsive-video">
+          <iframe
+            src="https://www.youtube.com/embed/mNq5dJgU-3Q?start=4&end=105&controls=1&modestbranding=0&rel=0&disablekb=1&fs=0"
+            title="Video de presentación"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💬 Descripción -->
+  <section class="descripcion-section">
+    <div class="container">
+      <p>
+        Creamos asistentes virtuales personalizados que transforman la forma en que te comunicas con tus clientes. Ya sea para soporte, ventas o agendamiento, nuestros bots trabajan 24/7 desde una plataforma que todos conocen: WhatsApp.
+      </p>
+    </div>
+  </section>
+
+  <!-- 🧩 PLANES -->
+<section id="planes" class="planes-section">
+  <div class="container">
+    <h2>Elige el Plan Perfecto para Tu Negocio</h2>
+    <p class="planes-subtitle">Con tecnología robusta, integración total y una experiencia de cliente excepcional.</p>
+
+    <div class="planes-grid">
+      <!-- Soporte -->
+      <article class="plan-card">
+        <div class="plan-header">
+          <h3>Soporte</h3>
+          <span class="plan-price">400 US$ <span class="mensual">+ 40 US$/mes</span></span>
+        </div>
+        <ul class="plan-features">
+          <li>✅ Hosting 99.99%</li>
+          <li>✅ Soporte 24/7</li>
+          <li>✅ Conexión a Base de Datos</li>
+          <li>✅ API IA integrada</li>
+          <li>✅ WhatsApp con Meta/Twilio</li>
+          <li>✅ Personalización visual con tu marca</li>
+        </ul>
+        <a href="#contacto" class="btn-outline">Solicitar</a>
+      </article>
+
+      <!-- Agendamiento - Más vendido -->
+      <article class="plan-card destacado">
+        <div class="etiqueta">Más Vendido</div>
+        <div class="plan-header">
+          <h3>Agendamiento</h3>
+          <span class="plan-price">600 US$ <span class="mensual">+ 60 US$/mes</span> <em>+1 mes GRATIS</em></span>
+        </div>
+        <ul class="plan-features">
+          <li>✅ Todo lo del plan Soporte</li>
+          <li>✅ Agendar, modificar y cancelar citas</li>
+          <li>✅ API Calendar</li>
+          <li>✅ Capacitación personalizada</li>
+        </ul>
+        <a href="#contacto" class="btn-primary">Solicitar</a>
+      </article>
+
+      <!-- Comercio -->
+      <article class="plan-card">
+        <div class="plan-header">
+          <h3>Comercio</h3>
+          <span class="plan-price">1000 US$ <span class="mensual">+ 100 US$/mes</span> <em>+1 mes GRATIS</em></span>
+        </div>
+        <ul class="plan-features">
+          <li>✅ Todo lo del plan Agendamiento</li>
+          <li>✅ Facebook, Instagram + WhatsApp</li>
+          <li>✅ Generador de QR para pagos</li>
+          <li>✅ Integración con Nequi</li>
+          <li>✅ Verificación automática de pagos</li>
+          <li>✅ Análisis y reportes</li>
+        </ul>
+        <a href="#contacto" class="btn-outline">Solicitar</a>
+      </article>
+
+      <!-- Personalizado -->
+      <article class="plan-card premium">
+        <div class="etiqueta etiqueta-premium">Premium</div>
+        <div class="plan-header">
+          <h3>Personalizado</h3>
+          <span class="plan-price">A convenir <em>+1 mes GRATIS</em></span>
+        </div>
+        <ul class="plan-features">
+          <li>🎯 100% adaptado a tu empresa</li>
+          <li>🔌 Integración con cualquier API</li>
+          <li>🚀 Automatización de procesos internos</li>
+          <li>🧠 IA personalizada</li>
+          <li>💼 Asesoría técnica y estratégica</li>
+        </ul>
+        <a href="#contacto" class="btn-primary">Solicitar asesoría</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 🌐 OTRAS SOLUCIONES -->
+<section id="otras-soluciones" class="otras-soluciones-section">
+  <div class="container">
+    <h2>¿Buscas algo diferente?</h2>
+    <p class="otras-subtitle">Además de nuestros planes de Agentes de Chat, también desarrollamos soluciones tecnológicas únicas adaptadas a tus necesidades. Estos son algunos de nuestros productos destacados:</p>
+
+    <div class="productos-grid">
+      <!-- AsistChat Speak -->
+      <article class="producto-card">
+        <h3>AsistChat Speak</h3>
+        <p>
+          Herramienta diseñada para academias y centros educativos. Evalúa el nivel de speaking del estudiante con estándares oficiales de certificación internacional. 
+          Entrega estadísticas detalladas, feedback personalizado y recomendaciones precisas para mejorar en cada ejercicio.
+        </p>
+      </article>
+
+      <!-- AsistChat School -->
+      <article class="producto-card">
+        <h3>AsistChat School</h3>
+        <p>
+          Una IA educativa pensada para potenciar el aprendizaje real. En lugar de dar respuestas directas, guía al estudiante con preguntas y acompañamiento estratégico que promueve el pensamiento crítico y la apropiación del conocimiento.
+        </p>
+      </article>
+    </div>
+
+    <div class="cta-desarrollo">
+      <h3>¿Tienes una idea en mente?</h3>
+      <p>Desarrollamos soluciones a medida, integradas con cualquier API o plataforma. Desde herramientas internas hasta productos completos.</p>
+      <a href="#contacto" class="btn-primary">Hablemos de tu proyecto</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- 🧑‍💼 SOBRE NOSOTROS -->
+<section id="nosotros" class="nosotros-section">
+  <div class="container">
+    <h2>Quiénes Somos</h2>
+    <p class="intro-nosotros">
+      En <strong>AsistChat</strong> llevamos más de un año desarrollando soluciones inteligentes que impulsan la comunicación automatizada y mejoran procesos internos de empresas en distintos sectores.
+    </p>
+
+    <div class="nosotros-grid">
+      <div class="nosotros-texto">
+        <p>
+          Nuestro equipo está formado por profesionales con experiencia en áreas clave como:
+        </p>
+        <ul class="lista-equipo">
+          <li>✅ Desarrollo Frontend & Backend</li>
+          <li>✅ UX/UI Design enfocado en usabilidad conversacional</li>
+          <li>✅ Integraciones API (Meta, Twilio, Nequi, Google, entre otras)</li>
+          <li>✅ Ingenieros en sistemas e inteligencia artificial</li>
+          <li>✅ Consultores de automatización de procesos</li>
+          <li>✅ Especialistas en SEO y analítica digital</li>
+        </ul>
+        <p>
+          Nuestra misión es ayudarte a transformar tu negocio con herramientas basadas en IA que realmente generen valor: desde atención al cliente automatizada hasta soluciones educativas, comerciales y personalizadas.
+        </p>
+      </div>
+
+      <div class="nosotros-info-extra">
+        <div class="dato-clave">
+          <h3>+1 año</h3>
+          <p>Desarrollando soluciones con IA</p>
+        </div>
+        <div class="dato-clave">
+          <h3>99.99%</h3>
+          <p>Tiempo de disponibilidad</p>
+        </div>
+        <div class="dato-clave">
+          <h3>24/7</h3>
+          <p>Soporte especializado</p>
+        </div>
+        <div class="dato-clave">
+          <h3>100%</h3>
+          <p>Adaptado a tu marca y negocio</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 🌟 NUESTROS LOGROS Y TESTIMONIOS -->
+<section id="logros" class="logros-section">
+  <div class="container">
+    <h2>Nuestros Logros</h2>
+    <p class="logros-sub">Soluciones estables, inteligentes y personalizadas que generan resultados reales.</p>
+
+    <!-- 🔹 MÉTRICAS DESTACADAS -->
+    <div class="metricas-grid">
+      <div class="metrica">
+        <h3>99.99%</h3>
+        <p>Tiempo en línea garantizado</p>
+      </div>
+      <div class="metrica">
+        <h3>24/7</h3>
+        <p>Soporte técnico especializado</p>
+      </div>
+      <div class="metrica">
+        <h3>0 min</h3>
+        <p>Tiempo de reinicio del bot</p>
+      </div>
+      <div class="metrica">
+        <h3>+12</h3>
+        <p>APIs integradas (Meta, Twilio, Nequi, etc.)</p>
+      </div>
+      <div class="metrica">
+        <h3>100%</h3>
+        <p>Personalizado a medida</p>
+      </div>
+      <div class="metrica">
+        <h3>Datos & IA</h3>
+        <p>Análisis inteligente de conversaciones</p>
+      </div>
+      <div class="metrica">
+        <h3>Backups</h3>
+        <p>Sistemas de respaldo automáticos</p>
+      </div>
+    </div>
+
+    <!-- 🔹 TESTIMONIOS EN CARRUSEL -->
+    <div class="testimonios-carousel">
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          
+          <!-- TESTIMONIOS DESTACADOS -->
+          <div class="testimonio-card">
+            <p>“El bot de soporte nos permite responder consultas al instante, redujo carga operativa y mejoró la experiencia de nuestros estudiantes.”</p>
+            <cite>— Wizi Academy</cite>
+          </div>
+
+          <div class="testimonio-card">
+            <p>“Con el bot que analiza fotos de comidas, nuestros clientes obtienen recomendaciones automáticas y personalizadas. Innovador y eficaz.”</p>
+            <cite>— NutriVida Center</cite>
+          </div>
+
+          <div class="testimonio-card">
+            <p>“Nuestra clínica ahora agenda sin errores y responde 24/7. El bot se convirtió en parte fundamental del servicio.”</p>
+            <cite>— Clínica Dental SonrisaPlus</cite>
+          </div>
+
+          <!-- TESTIMONIOS EXTRAS -->
+          <div class="testimonio-card">
+            <p>“El bot de comercio con Nequi nos permite recibir pagos automáticamente y confirmar pedidos sin intervención humana.”</p>
+            <cite>— EcoTienda</cite>
+          </div>
+
+          <div class="testimonio-card">
+            <p>“Con el bot de agendamiento redujimos cancelaciones y mejoramos la puntualidad en consultas.”</p>
+            <cite>— VitalMed</cite>
+          </div>
+
+          <div class="testimonio-card">
+            <p>“Nuestro ecommerce ahora responde 24/7, automatiza seguimientos y ofrece recomendaciones según el catálogo.”</p>
+            <cite>— ShopoMarket</cite>
+          </div>
+
+          <div class="testimonio-card">
+            <p>“Implementamos un bot que guía al cliente hasta finalizar su compra con MercadoPago. Fluido y confiable.”</p>
+            <cite>— MundoFit Store</cite>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ❓ Preguntas Frecuentes tipo Chat -->
+<section class="faq-section" id="faq">
+  <h2 class="fade-on-scroll">Preguntas Frecuentes</h2>
+  <div class="faq-chatbox fade-on-scroll">
+    <div class="faq-question" onclick="mostrarRespuesta(0)">¿Qué tipo de bots ofrecen?</div>
+    <div class="faq-question" onclick="mostrarRespuesta(1)">¿Puedo conectar el bot a mi WhatsApp Business?</div>
+    <div class="faq-question" onclick="mostrarRespuesta(2)">¿Cuánto tarda en estar listo un bot personalizado?</div>
+    <div class="faq-question" onclick="mostrarRespuesta(3)">¿Los bots aprenden con el tiempo?</div>
+    <div class="faq-question" onclick="mostrarRespuesta(4)">¿Qué pasa si mi negocio necesita algo muy específico?</div>
+    <div class="faq-question" onclick="mostrarRespuesta(5)">¿Puedo monitorear el rendimiento del bot?</div>
+
+    <div class="faq-respuestas">
+      <!-- Las respuestas se insertan por JS -->
+    </div>
+  </div>
+
+  <div class="faq-cta">
+    <a class="btn-primary" href="https://wa.me/XXXXXXXXXXX" target="_blank">
+      Habla con nuestro bot en WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- 📞 Sección de Contacto -->
+<section id="contacto" class="contact-section">
+  <div class="contact-cta">
+    <h2>¿Listo para llevar tu atención al siguiente nivel?</h2>
+    <p>Agenda ahora y obtén beneficios exclusivos. Contacta durante esta semana y recibe un descuento adicional en tu primer bot.</p>
+  </div>
+
+  <div class="contact-links-grid">
+    <div class="contact-card">
+      <div class="icon-placeholder">🌐</div>
+      <h3>Web Principal</h3>
+      <p>Explora nuestros servicios y descubre cómo revolucionar tu atención al cliente.</p>
+      <a href="https://asischat.com" target="_blank">asischat.com</a>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon-placeholder">💬</div>
+      <h3>AsistChat Speak</h3>
+      <p>Evalúa el nivel de speaking de tus estudiantes con feedback personalizado y estándares internacionales.</p>
+      <a href="https://speak.asischat.com" target="_blank">speak.asischat.com</a>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon-placeholder">🎓</div>
+      <h3>AsistChat School</h3>
+      <p>IA educativa que fomenta el pensamiento crítico y guía al estudiante en su proceso de aprendizaje.</p>
+      <a href="https://school.asischat.com" target="_blank">school.asischat.com</a>
+    </div>
+  </div>
+
+  <div class="contact-options">
+    <div class="contact-option">
+      <h4>🤖 Habla con nuestro bot</h4>
+      <p>Funcionando 24/7 te puede resolver todas las dudas que tengas o ayudarte a agendar una cita</p>
+      <div style="margin-top: 1rem;"></div>
+      <a class="btn-secondary" href="https://wa.me/XXXXXXXXXXX" target="_blank">Ir al chat del bot</a>
+    </div>
+
+    <div class="contact-option">
+      <h4>👨‍💼 Atención personalizada</h4>
+      <p>Disponible de lunes a viernes de 9:00 a.m. a 6:00 p.m.</p>
+      <a class="btn-secondary" href="https://wa.me/XXXXXXXXXXX?text=Quiero%20hablar%20con%20una%20persona" target="_blank">Hablar con una persona</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- 🦶 FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 AsistChat. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
