@@ -65,8 +65,19 @@
     </div>
   </section>
 
-  <!-- 🧩 PLANES -->
+<!-- 🧩 PLANES -->
 <section id="planes" class="planes-section">
+  <div class="planes-header-descuento">
+  <h3>¡Aprovecha hasta <strong>40%</strong> de descuento!</h3>
+  <p class="fecha-limite">*Promoción válida hasta el <span id="fecha-limite"></span></p>
+  <div class="contador">
+    <div><span id="dias">--</span><small>Días</small></div>
+    <div><span id="horas">--</span><small>Hrs</small></div>
+    <div><span id="minutos">--</span><small>Min</small></div>
+    <div><span id="segundos">--</span><small>Segs</small></div>
+  </div>
+</div>
+
   <div class="container">
     <h2>Elige el Plan Perfecto para Tu Negocio</h2>
     <p class="planes-subtitle">Con tecnología robusta, integración total y una experiencia de cliente excepcional.</p>
@@ -74,9 +85,17 @@
     <div class="planes-grid">
       <!-- Soporte -->
       <article class="plan-card">
+        <div class="etiquetas">
+          <div class="etiqueta etiqueta-descuento">-20%</div>
+        </div>
         <div class="plan-header">
           <h3>Soporte</h3>
-          <span class="plan-price">400 US$ <span class="mensual">+ 40 US$/mes</span></span>
+          <span class="plan-price">
+            <span class="precio-anterior">500 US$</span>
+            <span class="precio-actual">399 US$</span>
+            <span class="mensual">+ 39 US$/mes</span>
+            <br><del><em>+1 mes GRATIS</em></del>
+          </span>
         </div>
         <ul class="plan-features">
           <li>✅ Hosting 99.99%</li>
@@ -91,10 +110,18 @@
 
       <!-- Agendamiento - Más vendido -->
       <article class="plan-card destacado">
-        <div class="etiqueta">Más Vendido</div>
+        <div class="etiquetas">
+          <div class="etiqueta">Más Vendido</div>
+          <div class="etiqueta etiqueta-descuento">-30%</div>
+        </div>
         <div class="plan-header">
           <h3>Agendamiento</h3>
-          <span class="plan-price">600 US$ <span class="mensual">+ 60 US$/mes</span> <em>+1 mes GRATIS</em></span>
+          <span class="plan-price">
+            <span class="precio-anterior">859 US$</span>
+            <span class="precio-actual">599 US$</span>
+            <span class="mensual">+ 59 US$/mes</span>
+            <em>+1 mes GRATIS</em>
+          </span>
         </div>
         <ul class="plan-features">
           <li>✅ Todo lo del plan Soporte</li>
@@ -107,9 +134,17 @@
 
       <!-- Comercio -->
       <article class="plan-card">
+        <div class="etiquetas">
+          <div class="etiqueta etiqueta-descuento">-40%</div>
+        </div>
         <div class="plan-header">
           <h3>Comercio</h3>
-          <span class="plan-price">1000 US$ <span class="mensual">+ 100 US$/mes</span> <em>+1 mes GRATIS</em></span>
+          <span class="plan-price">
+            <span class="precio-anterior">1669 US$</span>
+            <span class="precio-actual">999 US$</span>
+            <span class="mensual">+ 99 US$/mes</span>
+            <em>+1 mes GRATIS</em>
+          </span>
         </div>
         <ul class="plan-features">
           <li>✅ Todo lo del plan Agendamiento</li>
@@ -205,7 +240,7 @@
       <div class="nosotros-info-extra">
         <div class="dato-clave">
           <h3>+1 año</h3>
-          <p>Desarrollando soluciones con IA</p>
+          <p>Desarrollando soluciones IA</p>
         </div>
         <div class="dato-clave">
           <h3>99.99%</h3>

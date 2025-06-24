@@ -123,7 +123,7 @@ ul {
 
 .hero-content p {
   font-size: 1.125rem;
-  color: var(--color-alt-text);
+  color: #000;
   margin-bottom: 2rem;
 }
 
@@ -249,6 +249,22 @@ ul {
   color: #666;
 }
 
+/* NUEVOS ESTILOS DE PRECIO */
+.precio-anterior {
+  color: #e74c3c;
+  text-decoration: line-through;
+  font-size: 0.95rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.precio-actual {
+  color: #2d3436;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
 ul.plan-features {
   list-style: none;
   padding: 0;
@@ -298,6 +314,94 @@ ul.plan-features li::before {
   align-self: stretch;
   text-align: center;
 }
+/* NUEVOS ESTILOS DE PRECIO */
+.precio-anterior {
+  color: #e63946; /* rojo fuerte */
+  text-decoration: line-through;
+  font-size: 2rem; /* más grande */
+  font-weight: bold;
+  display: block;
+  line-height: 1.2;
+}
+
+.precio-actual {
+  color: #00b894; /* mismo color que "+1 mes GRATIS" */
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  line-height: 1.2;
+}
+
+.mensual {
+  font-size: 1rem;
+  color: #666;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.etiqueta-descuento {
+  background-color: #e63946; /* rojo fuerte */
+  color: white;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.planes-header-descuento {
+  background: #ffeded;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.planes-header-descuento h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  color: #d90429;
+}
+
+.planes-header-descuento h3 strong {
+  font-weight: bold;
+}
+
+.planes-header-descuento .fecha-limite {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contador div {
+  background: #d90429;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  min-width: 60px;
+}
+
+.contador div span {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.contador div small {
+  font-size: 0.7rem;
+  opacity: 0.85;
+}
+
+
 
 /* -------------------------------
    PERSONALIZADO

@@ -87,3 +87,38 @@ function mostrarRespuesta(index) {
 
   escribirTexto();
 }
+
+
+  function obtenerFechaLimite() {
+    const ahora = new Date();
+    const inicioCiclo = new Date(2024, 0, 1); // Punto fijo (1 enero)
+    const msDesdeInicio = ahora - inicioCiclo;
+    const msPorCiclo = 14 * 24 * 60 * 60 * 1000; // 2 semanas
+    const ciclosTranscurridos = Math.floor(msDesdeInicio / msPorCiclo);
+    const siguienteFecha = new Date(inicioCiclo.getTime() + (ciclosTranscurridos + 1) * msPorCiclo);
+    return siguienteFecha;
+  }
+
+  function actualizarContador() {
+    const limite = obtenerFechaLimite();
+    const ahora = new Date();
+    const diferencia = limite - ahora;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferencia / 1000) % 60);
+
+    document.getElementById("dias").textContent = dias;
+    document.getElementById("horas").textContent = horas.toString().padStart(2, "0");
+    document.getElementById("minutos").textContent = minutos.toString().padStart(2, "0");
+    document.getElementById("segundos").textContent = segundos.toString().padStart(2, "0");
+
+    const opcionesFecha = { day: "numeric", month: "long" };
+    document.getElementById("fecha-limite").textContent = limite.toLocaleDateString("es-ES", opcionesFecha);
+  }
+
+  actualizarContador();
+  setInterval(actualizarContador, 1000);
+
+
