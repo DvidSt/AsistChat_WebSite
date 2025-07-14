@@ -3,444 +3,585 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Agentes profesionales tipo WhatsApp para soporte, agendamiento, comercio y soluciones personalizadas." />
-  <meta name="keywords" content="chatbot, whatsapp, soporte, agendamiento, comercio, inteligencia artificial, atención al cliente" />
+  <meta name="description" content="Agentes IA profesionales para WhatsApp que automatizan tu atención al cliente, agendamiento y ventas" />
+  <meta name="keywords" content="chatbot whatsapp, automatización whatsapp, agente IA, atención al cliente automática, agendamiento citas, ecommerce whatsapp" />
   <meta name="author" content="AsistChat" />
-  <title>AsistChat | Soluciones de IA</title>
+  <title>AsistChat | Agentes IA Profesionales para WhatsApp - Automatiza Tu Negocio</title>
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://asistchat.com">
+  <meta property="og:title" content="AsistChat | Agentes IA para WhatsApp que Transforman Tu Negocio">
+  <meta property="og:description" content="Automatiza atención al cliente, agendamiento y ventas con nuestros agentes IA profesionales para WhatsApp">
+  <meta property="og:image" content="https://asistchat.com/img/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://asistchat.com">
+  <meta property="twitter:title" content="AsistChat | Agentes IA para WhatsApp que Transforman Tu Negocio">
+  <meta property="twitter:description" content="Automatiza atención al cliente, agendamiento y ventas con nuestros agentes IA profesionales para WhatsApp">
+  <meta property="twitter:image" content="https://asistchat.com/img/twitter-card.jpg">
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="img/AsistBot_Logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
-  <!-- 🔝 Header -->
+  <!-- 🔝 Header Moderno -->
   <header class="site-header">
     <nav class="navbar container">
       <div class="logo">
-        <img src="img/AsistBot_Logo.svg" alt="AsistChat Logo" height="40"  width="40"/>
+        <img src="img/AsistBot_Logo.svg" alt="AsistChat Logo" width="40" height="40">
         <span class="logo-text">AsistChat</span>
       </div>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#planes">Planes</a></li>
-        <li><a href="#otras-soluciones">Personalizado</a></li>
+        <li><a href="#soluciones">Soluciones</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
+      <a href="#contacto" class="btn btn-primary cta-button">Demo Gratis</a>
     </nav>
   </header>
 
-  <!-- 🎯 Hero -->
+  <!-- 🎯 Hero Section - Impactante -->
   <section id="inicio" class="hero-section">
-    <div class="container hero-content">
-      <h1>Automatiza. Conecta. Conversa.</h1>
-      <p>Agentes profesionales diseñados para impulsar tu negocio en WhatsApp.</p>
-
-      <div class="hero-video-wrapper">
-  <div class="responsive-video">
-    <video
-      controls
-      preload="metadata"
-      playsinline
-      style="width: 100%; max-width: 100%; height: auto; cursor: pointer;"
-    ><!--poster="img/Agentes_Preview.jpg" esto falta-->
-      <source src="img/Agentes.mp4" type="video/mp4" />
-      Tu navegador no soporta videos HTML5.
-    </video>
-  </div>
-</div>
-    </div>  
-    <a href="#contacto" class="btn-primary">Contáctanos</a>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="fade-in">Transforma tu negocio con Agentes IA para WhatsApp</h1>
+        <p class="fade-in delay-1">Automatiza atención al cliente, agendamiento de citas y ventas con nuestros agentes profesionales</p>
+        
+        <div class="hero-cta fade-in delay-2">
+          <a href="#planes" class="btn btn-primary">Ver Planes</a>
+          <a href="#contacto" class="btn btn-outline">Demo Gratis</a>
+        </div>
+        
+        <div class="hero-video-wrapper fade-in delay-3">
+          <video controls preload="metadata" playsinline>
+            <source src="img/Agentes.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+          </video>
+        </div>
+      </div>
+    </div>
   </section>
 
-<!-- 🧩 PLANES -->
-<section id="planes" class="planes-section">
-  <div class="planes-header-descuento">
-  <h2>¡Aprovecha hasta <strong>40%</strong> de descuento!</h2>
-  <p class="fecha-limite">*Promoción válida hasta el <span id="fecha-limite"></span></p>
-  <div class="contador">
-    <div><span id="dias">--</span><small>Días</small></div>
-    <div><span id="horas">--</span><small>Hrs</small></div>
-    <div><span id="minutos">--</span><small>Min</small></div>
-    <div><span id="segundos">--</span><small>Segs</small></div>
+  <!-- 🧩 Sección de Planes -->
+  <section id="planes" class="plans-section">
+    <div class="container">
+      <div class="section-title-center">
+        <h2>Planes para Cada Necesidad</h2>
+        <p class="section-subtitle">Elige el plan perfecto que se adapte a tu negocio y comienza a automatizar hoy mismo</p>
+      </div>
+
+      <div class="promo-banner fade-in">
+        <h3>¡Oferta Especial de Lanzamiento!</h3>
+        <p>Solo para los primeros 10 clientes - Setup Gratis en Plan Starter</p>
+        <div class="countdown">
+          <div class="countdown-item">
+            <div class="countdown-value" id="days">03</div>
+            <div class="countdown-label">Días</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-value" id="hours">12</div>
+            <div class="countdown-label">Horas</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-value" id="minutes">45</div>
+            <div class="countdown-label">Minutos</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-value" id="seconds">30</div>
+            <div class="countdown-label">Segundos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plans-grid">
+        <!-- Plan Starter -->
+        <div class="plan-card fade-in">
+          <div class="plan-header">
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-desc">Ideal para emprendedores que quieren comenzar</p>
+            <div class="plan-price">
+              <span class="price-main">$0</span>
+              <span class="price-period">+ $39/mes</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Asistente IA personalizado</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Entrenado con hasta 10 páginas de información</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Integrado a WhatsApp verificado</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Diseño básico</span>
+            </div>
+          </div>
+          <div class="plan-footer">
+            <a href="#contacto" class="btn btn-outline">Empezar Gratis</a>
+          </div>
+        </div>
+
+        <!-- Soporte Pro -->
+        <div class="plan-card fade-in delay-1">
+          <div class="featured-badge">Más Popular</div>
+          <div class="plan-header">
+            <h3 class="plan-name">Soporte Pro</h3>
+            <p class="plan-desc">Atención al cliente automatizada sin límites</p>
+            <div class="plan-price">
+              <span class="price-main">$149</span>
+              <span class="price-period">+ $49/mes</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Todas las características del plan Starter</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Sin límite de contenido</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Personalización visual completa</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Integración con CRM o Google Sheets</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Capacitación básica</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Soporte técnico prioritario</span>
+            </div>
+          </div>
+          <div class="plan-footer">
+            <a href="#contacto" class="btn btn-primary">Contratar Ahora</a>
+          </div>
+        </div>
+
+        <!-- Agendamiento AI -->
+        <div class="plan-card fade-in delay-2">
+          <div class="plan-header">
+            <h3 class="plan-name">Agendamiento AI</h3>
+            <p class="plan-desc">Tu secretaria virtual 24/7 para citas</p>
+            <div class="plan-price">
+              <span class="price-main">$199</span>
+              <span class="price-period">+ $59/mes</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Todas las características del Soporte Pro</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Agendar, modificar y cancelar citas</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Sincronizado con Google Calendar</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Envío de recordatorios automáticos</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Reducción de ausencias con IA</span>
+            </div>
+          </div>
+          <div class="plan-footer">
+            <a href="#contacto" class="btn btn-outline">Contratar Ahora</a>
+          </div>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="plan-card fade-in delay-3">
+          <div class="plan-header">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-desc">Solución completa para automatización avanzada</p>
+            <div class="plan-price">
+              <span class="price-main">$499+</span>
+              <span class="price-period">+ $69+/mes</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Todas las características del Agendamiento AI</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Encuestas dinámicas</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Envío de correos automáticos</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Reconocimiento de imágenes</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Integración con APIs externas</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Solución 100% personalizada</span>
+            </div>
+          </div>
+          <div class="plan-footer">
+            <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌐 Otras Soluciones -->
+  <section id="soluciones" class="solutions-section">
+    <div class="container">
+      <div class="section-title-center">
+        <h2>Nuestras Soluciones Especializadas</h2>
+        <p class="section-subtitle">Productos diseñados para necesidades específicas de tu industria</p>
+      </div>
+
+      <div class="solutions-grid">
+        <div class="solution-card fade-in">
+          <div class="solution-img">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="solution-content">
+            <h3 class="solution-title">AsistChat Speak</h3>
+            <p class="solution-desc">Herramienta para academias que evalúa el nivel de speaking con estándares internacionales. Entrega estadísticas detalladas y feedback personalizado.</p>
+            <a href="https://speak.asistchat.com/" class="btn btn-outline" target="_blank">Ver Demo</a>
+          </div>
+        </div>
+
+        <div class="solution-card fade-in delay-1">
+          <div class="solution-img">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="solution-content">
+            <h3 class="solution-title">AsistChat School</h3>
+            <p class="solution-desc">IA educativa que guía al estudiante con preguntas estratégicas para promover el pensamiento crítico y la apropiación del conocimiento.</p>
+            <a href="https://school.asistchat.com/" class="btn btn-outline" target="_blank">Ver Demo</a>
+          </div>
+        </div>
+
+        <div class="solution-card fade-in delay-2">
+          <div class="solution-img">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <div class="solution-content">
+            <h3 class="solution-title">AsistChat Med</h3>
+            <p class="solution-desc">Solución todo-en-uno para clínicas que gestiona redes sociales, agenda citas 24/7 y proporciona inteligencia de negocio.</p>
+            <a href="https://med.asistchat.com/" class="btn btn-outline" target="_blank">Ver Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧑‍💼 Sobre Nosotros -->
+  <section id="nosotros" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>Quiénes Somos</h2>
+          <p>En AsistChat llevamos más de un año desarrollando soluciones inteligentes que impulsan la comunicación automatizada y mejoran procesos internos de empresas en distintos sectores.</p>
+          <p>Nuestro equipo está formado por profesionales con experiencia en desarrollo frontend y backend, UX/UI design, integraciones API, ingeniería en sistemas e inteligencia artificial.</p>
+          
+          <div class="stats-grid">
+            <div class="stat-card fade-in">
+              <div class="stat-value">+1 año</div>
+              <div class="stat-label">Desarrollando soluciones IA</div>
+            </div>
+            <div class="stat-card fade-in delay-1">
+              <div class="stat-value">99.99%</div>
+              <div class="stat-label">Tiempo de disponibilidad</div>
+            </div>
+            <div class="stat-card fade-in delay-2">
+              <div class="stat-value">24/7</div>
+              <div class="stat-label">Soporte especializado</div>
+            </div>
+            <div class="stat-card fade-in delay-3">
+              <div class="stat-value">100%</div>
+              <div class="stat-label">Personalizado a tu negocio</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-image fade-in">
+          <i class="fas fa-robot"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌟 Testimonios -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-title-center">
+        <h2>Lo Que Dicen Nuestros Clientes</h2>
+        <p class="section-subtitle">Empresas que han transformado su atención al cliente con AsistChat</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-text">"El bot de soporte nos permite responder consultas al instante, redujo carga operativa y mejoró la experiencia de nuestros estudiantes."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">W</div>
+            <div class="author-info">
+              <div class="author-name">Wizi Academy</div>
+              <div class="author-company">Academia de Idiomas</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in delay-1">
+          <p class="testimonial-text">"Con el bot que analiza fotos de comidas, nuestros clientes obtienen recomendaciones automáticas y personalizadas. Innovador y eficaz."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">N</div>
+            <div class="author-info">
+              <div class="author-name">NutriVida Center</div>
+              <div class="author-company">Centro de Nutrición</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in delay-2">
+          <p class="testimonial-text">"Nuestra clínica ahora agenda sin errores y responde 24/7. El bot se convirtió en parte fundamental del servicio."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">C</div>
+            <div class="author-info">
+              <div class="author-name">Clínica Dental SonrisaPlus</div>
+              <div class="author-company">Clínica Odontológica</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ❓ Preguntas Frecuentes -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-title-center">
+        <h2>Preguntas Frecuentes</h2>
+        <p class="section-subtitle">Todo lo que necesitas saber sobre nuestros agentes IA</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item fade-in">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            ¿Qué tipo de bots ofrecen? <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Ofrecemos diferentes tipos de bots especializados: atención al cliente, agendamiento de citas, ventas automatizadas y soluciones personalizadas para necesidades específicas de tu industria.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in delay-1">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            ¿Puedo conectar el bot a mi WhatsApp Business? <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Sí, todos nuestros bots se integran perfectamente con WhatsApp Business. Te ayudamos a configurar la conexión y verificar tu cuenta si es necesario.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in delay-2">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            ¿Cuánto tarda en estar listo un bot personalizado? <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>El tiempo de implementación varía según la complejidad. Para el plan Starter, podemos tenerlo funcionando en 48 horas. Soluciones más complejas pueden tardar entre 1 y 3 semanas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in delay-3">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            ¿Los bots aprenden con el tiempo? <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Sí, nuestros bots utilizan IA que aprende de las interacciones con tus clientes. Además, nuestro equipo realiza actualizaciones periódicas basadas en el análisis de conversaciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 📞 Contacto -->
+<section id="contacto" class="contact-section">
+  <div class="container">
+    <div class="contact-content">
+      <div class="contact-info">
+        <h2>¿Listo para Automatizar tu Negocio?</h2>
+        <p>Contáctanos hoy mismo para una demostración gratuita y descubre cómo nuestros agentes IA pueden transformar tu atención al cliente.</p>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Correo Electrónico</h4>
+              <a href="mailto:info@asistchat.com">info@asistchat.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-details">
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/+573006542038" target="_blank">+57 300 654 2038</a>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Ubicación</h4>
+              <p>Bogotá, Colombia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <!-- Formulario con Formspree -->
+        <form action="https://formspree.io/f/meozjbzw" method="POST" id="contact-form">
+          <!-- Campos ocultos para Formspree -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde AsistChat">
+          <input type="hidden" name="_replyto" value="info@asistchat.com">
+          
+          <div class="form-group">
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="business">Tipo de Negocio</label>
+            <select id="business" name="business">
+              <option value="">Selecciona una opción</option>
+              <option value="ecommerce">E-commerce</option>
+              <option value="services">Servicios Profesionales</option>
+              <option value="education">Educación</option>
+              <option value="health">Salud</option>
+              <option value="other">Otro</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">¿Cómo podemos ayudarte?</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          
+          <button type="submit" class="form-submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal de éxito -->
+<div class="modal" id="success-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-icon">
+      <i class="fas fa-check"></i>
+    </div>
+    <h3>¡Mensaje Enviado!</h3>
+    <p>Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos lo antes posible.</p>
+    <button class="btn" id="modal-ok">Entendido</button>
   </div>
 </div>
-
-  <div class="container">
-    <h2>Elige el Plan Perfecto para Tu Negocio</h2>
-    <p class="planes-subtitle">Con tecnología robusta, integración total y una experiencia de cliente excepcional.</p>
-
-    <div class="planes-grid">
-      <!-- Soporte -->
-      <article class="plan-card">
-        <div class="etiquetas">
-          <div class="etiqueta etiqueta-descuento">-20%</div>
-        </div>
-        <div class="plan-header">
-          <h3>Soporte</h3>
-          <span class="plan-price">
-            <span class="precio-anterior">500 US$</span>
-            <span class="precio-actual">399 US$</span>
-            <span class="mensual">+ 39 US$/mes</span>
-            <br><del><em>+1 mes GRATIS</em></del>
-          </span>
-        </div>
-        <ul class="plan-features">
-          <li>✅ Hosting 99.99%</li>
-          <li>✅ Soporte 24/7</li>
-          <li>✅ Conexión a Base de Datos</li>
-          <li>✅ API IA integrada</li>
-          <li>✅ WhatsApp con Meta/Twilio</li>
-          <li>✅ Personalización visual con tu marca</li>
-        </ul>
-        <a href="#contacto" class="btn-outline">Solicitar</a>
-      </article>
-
-      <!-- Agendamiento - Más vendido -->
-      <article class="plan-card destacado">
-        <div class="etiquetas">
-          <div class="etiqueta">Más Vendido</div>
-          <div class="etiqueta etiqueta-descuento">-30%</div>
-        </div>
-        <div class="plan-header">
-          <h3>Agendamiento</h3>
-          <span class="plan-price">
-            <span class="precio-anterior">859 US$</span>
-            <span class="precio-actual">599 US$</span>
-            <span class="mensual">+ 59 US$/mes</span>
-            <em>+1 mes GRATIS</em>
-          </span>
-        </div>
-        <ul class="plan-features">
-          <li>✅ Todo lo del plan Soporte</li>
-          <li>✅ Agendar, modificar y cancelar citas</li>
-          <li>✅ API Calendar</li>
-          <li>✅ Capacitación personalizada</li>
-        </ul>
-        <a href="#contacto" class="btn-primary">Solicitar</a>
-      </article>
-
-      <!-- Comercio -->
-      <article class="plan-card">
-        <div class="etiquetas">
-          <div class="etiqueta etiqueta-descuento">-40%</div>
-        </div>
-        <div class="plan-header">
-          <h3>Comercio</h3>
-          <span class="plan-price">
-            <span class="precio-anterior">1669 US$</span>
-            <span class="precio-actual">999 US$</span>
-            <span class="mensual">+ 99 US$/mes</span>
-            <em>+1 mes GRATIS</em>
-          </span>
-        </div>
-        <ul class="plan-features">
-          <li>✅ Todo lo del plan Agendamiento</li>
-          <li>✅ Facebook, Instagram + WhatsApp</li>
-          <li>✅ Generador de QR para pagos</li>
-          <li>✅ Integración con Nequi</li>
-          <li>✅ Verificación automática de pagos</li>
-          <li>✅ Análisis y reportes</li>
-        </ul>
-        <a href="#contacto" class="btn-outline">Solicitar</a>
-      </article>
-
-      <!-- Personalizado -->
-      <article class="plan-card premium">
-        <div class="etiqueta etiqueta-premium">Premium</div>
-        <div class="plan-header">
-          <h3>Personalizado</h3>
-          <span class="plan-price">A convenir <em>+1 mes GRATIS</em></span>
-        </div>
-        <ul class="plan-features">
-          <li>🎯 100% adaptado a tu empresa</li>
-          <li>🔌 Integración con cualquier API</li>
-          <li>🚀 Automatización de procesos internos</li>
-          <li>🧠 IA personalizada</li>
-          <li>💼 Asesoría técnica y estratégica</li>
-        </ul>
-        <a href="#contacto" class="btn-primary">Solicitar asesoría</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- 🌐 OTRAS SOLUCIONES -->
-<section id="otras-soluciones" class="otras-soluciones-section">
-  <div class="container">
-    <h2>¿Buscas algo diferente?</h2>
-    <p class="otras-subtitle">Además de nuestros planes de Agentes de Chat, también desarrollamos soluciones tecnológicas únicas adaptadas a tus necesidades. Estos son algunos de nuestros productos destacados:</p>
-
-    <div class="productos-grid">
-      <!-- AsistChat Speak -->
-      <article class="producto-card">
-        <h3>AsistChat Speak</h3>
-        <p>
-          Herramienta diseñada para academias y centros educativos. Evalúa el nivel de speaking del estudiante con estándares oficiales de certificación internacional. 
-          Entrega estadísticas detalladas, feedback personalizado y recomendaciones precisas para mejorar en cada ejercicio.
-        </p>
-        <p></p>
-        <a href="https://speak.asistchat.com/" class="btn-outline">speak.asistchat.com</a>
-      </article>
-
-      <!-- AsistChat School -->
-      <article class="producto-card">
-        <h3>AsistChat School</h3>
-        <p>
-          Una IA educativa pensada para potenciar el aprendizaje real. En lugar de dar respuestas directas, guía al estudiante con preguntas y acompañamiento estratégico que promueve el pensamiento crítico y la apropiación del conocimiento.
-        </p>
-        <p></p>
-        <a href="https://school.asistchat.com/" class="btn-outline">school.asistchat.com</a>
-      </article>
-
-            <!-- AsistChat Med -->
-      <article class="producto-card">
-        <h3>AsistChat Med</h3>
-        <p>
-        ASISTCHAT MED es la solución todo-en-uno que gestiona tus redes sociales, agenda citas 24/7 y te proporciona inteligencia de negocio mientras tú dedicas tiempo a la atención médica.
-        </p>
-        <p></p>
-        <a href="https://med.asistchat.com/" class="btn-outline">med.asistchat.com</a>
-      </article>
-    </div>
-
-    <div class="cta-desarrollo">
-      <h3>¿Tienes una idea en mente?</h3>
-      <p>Desarrollamos soluciones a medida, integradas con cualquier API o plataforma. Desde herramientas internas hasta productos completos.</p>
-      <a href="#contacto" class="btn-primary">Hablemos de tu proyecto</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- 🧑‍💼 SOBRE NOSOTROS -->
-<section id="nosotros" class="nosotros-section">
-  <div class="container">
-    <h2>Quiénes Somos</h2>
-    <p class="intro-nosotros">
-      En <strong>AsistChat</strong> llevamos más de un año desarrollando soluciones inteligentes que impulsan la comunicación automatizada y mejoran procesos internos de empresas en distintos sectores.
-    </p>
-
-    <div class="nosotros-grid">
-      <div class="nosotros-texto">
-        <p>
-          Nuestro equipo está formado por profesionales con experiencia en áreas clave como:
-        </p>
-        <ul class="lista-equipo">
-          <li>✅ Desarrollo Frontend & Backend</li>
-          <li>✅ UX/UI Design enfocado en usabilidad conversacional</li>
-          <li>✅ Integraciones API (Meta, Twilio, Nequi, Google, entre otras)</li>
-          <li>✅ Ingenieros en sistemas e inteligencia artificial</li>
-          <li>✅ Consultores de automatización de procesos</li>
-          <li>✅ Especialistas en SEO y analítica digital</li>
-        </ul>
-        <p>
-          Nuestra misión es ayudarte a transformar tu negocio con herramientas basadas en IA que realmente generen valor: desde atención al cliente automatizada hasta soluciones educativas, comerciales y personalizadas.
-        </p>
-      </div>
-
-      <div class="nosotros-info-extra">
-        <div class="dato-clave">
-          <h3>+1 año</h3>
-          <p>Desarrollando soluciones IA</p>
-        </div>
-        <div class="dato-clave">
-          <h3>99.99%</h3>
-          <p>Tiempo de disponibilidad</p>
-        </div>
-        <div class="dato-clave">
-          <h3>24/7</h3>
-          <p>Soporte especializado</p>
-        </div>
-        <div class="dato-clave">
-          <h3>100%</h3>
-          <p>Adaptado a tu marca y negocio</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- 🌟 NUESTROS LOGROS Y TESTIMONIOS -->
-<section id="logros" class="logros-section">
-  <div class="container">
-    <h2>Nuestros Logros</h2>
-    <p class="logros-sub">Soluciones estables, inteligentes y personalizadas que generan resultados reales.</p>
-
-    <!-- 🔹 MÉTRICAS DESTACADAS -->
-    <div class="metricas-grid">
-      <div class="metrica">
-        <h3>99.99%</h3>
-        <p>Tiempo en línea garantizado</p>
-      </div>
-      <div class="metrica">
-        <h3>24/7</h3>
-        <p>Soporte técnico especializado</p>
-      </div>
-      <div class="metrica">
-        <h3>0 min</h3>
-        <p>Tiempo de reinicio del bot</p>
-      </div>
-      <div class="metrica">
-        <h3>+12</h3>
-        <p>APIs integradas (Meta, Twilio, Nequi, etc.)</p>
-      </div>
-      <div class="metrica">
-        <h3>100%</h3>
-        <p>Personalizado a medida</p>
-      </div>
-      <div class="metrica">
-        <h3>Datos & IA</h3>
-        <p>Análisis inteligente de conversaciones</p>
-      </div>
-      <div class="metrica">
-        <h3>Backups</h3>
-        <p>Sistemas de respaldo automáticos</p>
-      </div>
-    </div>
-
-    <!-- 🔹 TESTIMONIOS EN CARRUSEL -->
-    <div class="testimonios-carousel">
-      <div class="carousel-wrapper">
-        <div class="carousel-track">
-          
-          <!-- TESTIMONIOS DESTACADOS -->
-          <div class="testimonio-card">
-            <p>“El bot de soporte nos permite responder consultas al instante, redujo carga operativa y mejoró la experiencia de nuestros estudiantes.”</p>
-            <cite>— Wizi Academy</cite>
-          </div>
-
-          <div class="testimonio-card">
-            <p>“Con el bot que analiza fotos de comidas, nuestros clientes obtienen recomendaciones automáticas y personalizadas. Innovador y eficaz.”</p>
-            <cite>— NutriVida Center</cite>
-          </div>
-
-          <div class="testimonio-card">
-            <p>“Nuestra clínica ahora agenda sin errores y responde 24/7. El bot se convirtió en parte fundamental del servicio.”</p>
-            <cite>— Clínica Dental SonrisaPlus</cite>
-          </div>
-
-          <!-- TESTIMONIOS EXTRAS -->
-          <div class="testimonio-card">
-            <p>“El bot de comercio con Nequi nos permite recibir pagos automáticamente y confirmar pedidos sin intervención humana.”</p>
-            <cite>— EcoTienda</cite>
-          </div>
-
-          <div class="testimonio-card">
-            <p>“Con el bot de agendamiento redujimos cancelaciones y mejoramos la puntualidad en consultas.”</p>
-            <cite>— VitalMed</cite>
-          </div>
-
-          <div class="testimonio-card">
-            <p>“Nuestro ecommerce ahora responde 24/7, automatiza seguimientos y ofrece recomendaciones según el catálogo.”</p>
-            <cite>— ShopoMarket</cite>
-          </div>
-
-          <div class="testimonio-card">
-            <p>“Implementamos un bot que guía al cliente hasta finalizar su compra con MercadoPago. Fluido y confiable.”</p>
-            <cite>— MundoFit Store</cite>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ❓ Preguntas Frecuentes tipo Chat -->
-<section class="faq-section" id="faq">
-  <h2 class="fade-on-scroll">Preguntas Frecuentes</h2>
-  <div class="faq-chatbox fade-on-scroll">
-    <div class="faq-question" onclick="mostrarRespuesta(0)">¿Qué tipo de bots ofrecen?</div>
-    <div class="faq-question" onclick="mostrarRespuesta(1)">¿Puedo conectar el bot a mi WhatsApp Business?</div>
-    <div class="faq-question" onclick="mostrarRespuesta(2)">¿Cuánto tarda en estar listo un bot personalizado?</div>
-    <div class="faq-question" onclick="mostrarRespuesta(3)">¿Los bots aprenden con el tiempo?</div>
-    <div class="faq-question" onclick="mostrarRespuesta(4)">¿Qué pasa si mi negocio necesita algo muy específico?</div>
-    <div class="faq-question" onclick="mostrarRespuesta(5)">¿Puedo monitorear el rendimiento del bot?</div>
-
-    <div class="faq-respuestas">
-      <!-- Las respuestas se insertan por JS -->
-    </div>
-  </div>
-
-  <!--<div class="faq-cta">
-    <a class="btn-primary" href="https://wa.me/+573006542038" target="_blank">
-      Habla con nuestro bot en WhatsApp
-    </a>
-  </div>-->
-</section>
-
-<!-- 📞 Sección de Contacto -->
-<section id="contacto" class="contact-section">
-  <div class="contact-cta">
-    <h2>¿Listo para llevar tu atención al siguiente nivel?</h2>
-    <p>Agenda ahora y obtén beneficios exclusivos. Contacta durante esta semana y recibe un descuento adicional en tu primer bot.</p>
-  </div>
-
-  <div class="contact-links-grid">
-    <div class="contact-card">
-      <div class="icon-placeholder">🌐</div>
-      <h3>Web Principal</h3>
-      <p>Explora nuestros servicios y descubre cómo revolucionar tu atención al cliente.</p>
-      <a href="https://asistchat.com" target="_blank">asischat.com</a>
-    </div>
-
-    <div class="contact-card">
-      <div class="icon-placeholder">💬</div>
-      <h3>AsistChat Speak</h3>
-      <p>Evalúa el nivel de speaking de tus estudiantes con feedback personalizado y estándares internacionales.</p>
-      <a href="https://speak.asistchat.com/" target="_blank">speak.asistchat.com</a>
-    </div>
-
-    <div class="contact-card">
-      <div class="icon-placeholder">🎓</div>
-      <h3>AsistChat School</h3>
-      <p>IA educativa que fomenta el pensamiento crítico y guía al estudiante en su proceso de aprendizaje.</p>
-      <a href="https://school.asistchat.com/" target="_blank">school.asistchat.com</a>
-    </div>
-
-        <div class="contact-card">
-      <div class="icon-placeholder">🩺</div>
-      <h3>AsistChat Med</h3>
-      <p>Solución todo-en-uno que gestiona tus redes sociales, agenda citas 24/7 y te proporciona inteligencia de negocio.</p>
-      <a href="https://med.asistchat.com/" target="_blank">med.asistchat.com</a>
-    </div>
-  </div>
-
-  <div class="contact-options">
-    <div class="contact-option">
-      <h4>✉️ Ponte en contacto por correo</h4>
-      <p>Si lo prefieres envia un correo y te responderemos cuanto antes con toda la informacion que necesites</p>
-      <div style="margin-top: 1rem;"></div>
-      <p> info@asistchat.com</p>
-    </div>
-
-    <div class="contact-option">
-      <h3>👨‍💼 Agenda una demostracion!</h3>
-      <p>Disponible de lunes a viernes de 9:00 a.m. a 6:00 p.m.</p>
-      <a class="btn-secondary" href="https://wa.me/+573006542038?text=Quiero%20hablar%20con%20una%20persona" target="_blank">Hablar con una persona</a>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- 🦶 FOOTER -->
+  <!-- 🦶 Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 AsistChat. Todos los derechos reservados.</p>
+      <div class="footer-content">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="img/AsistBot_Logo.svg" alt="AsistChat" width="40" height="40">
+            <span class="footer-logo-text">AsistChat</span>
+          </div>
+          <p>Agentes IA profesionales para WhatsApp que transforman la atención al cliente, agendamiento y ventas de tu negocio.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-container">
+          <h3 class="footer-title">Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#soluciones">Soluciones</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-container">
+          <h3 class="footer-title">Soluciones</h3>
+          <ul class="footer-links">
+            <li><a href="https://speak.asistchat.com/" target="_blank">AsistChat Speak</a></li>
+            <li><a href="https://school.asistchat.com/" target="_blank">AsistChat School</a></li>
+            <li><a href="https://med.asistchat.com/" target="_blank">AsistChat Med</a></li>
+            <li><a href="#contacto">Solución Personalizada</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        &copy; 2025 AsistChat. Todos los derechos reservados.
+      </div>
     </div>
   </footer>
 
-  <!-- JS -->
-  <script src="./js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
